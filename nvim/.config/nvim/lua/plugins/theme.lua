@@ -1,7 +1,7 @@
 -- lua/plugins/rose-pine.lua
 return {
-  "rebelot/kanagawa.nvim",
+  "folke/tokyonight.nvim",
   config = function()
-    vim.cmd("colorscheme kanagawa")
+    vim.cmd("colorscheme tokyonight-storm")
   end
 }
