@@ -22,7 +22,9 @@ return {
       require("lspconfig").tailwindcss.setup { capabilities = capabilities }
       require("lspconfig").cssls.setup { capabilities = capabilities }
       require("lspconfig").html.setup { capabilities = capabilities }
-      require("lspconfig").postgres_lsp.setup { capabilities = capabilities }
+      -- require("lspconfig").postgres_lsp.setup { capabilities = capabilities }
+      require("lspconfig").biome.setup { capabilities = capabilities }
+      require("lspconfig").jsonls.setup { capabilities = capabilities }
 
       vim.api.nvim_create_autocmd('LspAttach', {
         group = vim.api.nvim_create_augroup('my.lsp', {}),
