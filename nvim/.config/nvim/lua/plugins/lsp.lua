@@ -15,6 +15,7 @@ return {
       } },
     config = function()
       vim.keymap.set('n', '<leader>of', function() vim.diagnostic.open_float() end, { desc = 'Open diagnostic message' })
+      vim.keymap.set("n", "<leader>ra", function() vim.lsp.buf.rename() end, { desc = "renames a variable" })
       local capabilities = require("blink.cmp").get_lsp_capabilities()
 
       require("lspconfig").lua_ls.setup { capabilities = capabilities }
